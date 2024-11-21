@@ -1,0 +1,22 @@
+{% extends "index.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static',filename = 'css/style.css')}}">
+ <img id ="r" src="{{ url_for('static',filename='img/img1.webp')}}" alt="intro"/>
+
+ <div id="produits">
+    <div class="list">
+        {% for k in range(taille): %}
+    
+            <p>{{data[k]['name']}}</p>
+            <p>{{data[k]['description']}}</p>
+            <img src="{{data[k]['image']}}" alt="">
+            <button><a href="{{ url_for('acheter')}}">Buy!</a></button>
+      {%endfor%}
+    </div>
+      
+
+      
+ </div>
+
+{% endblock %}

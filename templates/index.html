@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue dans mon E-shop</title>
+</head>
+<body>
+    <h1>Boutique</h1>
+    <p>achetez ceux qui vous plaisent!</p>
+     <p> <a href="{{ url_for('contenus') }}">page achats</a></p>
+    <div id = "p">
+        {% block content%} {% endblock %}
+    </div>
+</body>
+</html>
