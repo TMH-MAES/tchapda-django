@@ -1,8 +1,8 @@
 Flask==2.3.3
-gunicorn==20.2.0      
-Flask-SQLAlchemy==2.5.1 
-Flask-Migrate==3.1.0  
-Flask-WTF==1.0.1        
-python-dotenv==0.21.0   
-requests==2.28.2      
-Flask-Login==0.6.1      
+gunicorn==20.1.0  # Utilisation d'une version stable de gunicorn
+Flask-SQLAlchemy==2.5.1
+Flask-Migrate==3.1.0
+Flask-WTF==1.0.1
+python-dotenv==0.21.0
+requests==2.28.2
+Flask-Login==0.6.1
